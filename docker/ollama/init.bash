@@ -1,2 +1,2 @@
 ollama serve & disown
-ollama pull qwq
+ollama pull llama2-uncensored:7b
