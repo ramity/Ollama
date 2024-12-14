@@ -1,3 +1,6 @@
+
+
+
 # Required Software
 
 Docker
@@ -9,6 +12,12 @@ Navigate to a projects folder of your choosing and run the following:
 ```
 git clone git@github.com:ramity/Ollama.git
 docker compose up -d
+```
+
+You can watch the build logs by running:
+
+```
+docker logs ollama -f
 ```
 
 # Usage
