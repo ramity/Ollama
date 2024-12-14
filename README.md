@@ -1,5 +1,6 @@
-
-
+<center>
+    <img src="https://github.com/jmorganca/ollama/assets/3325447/080f3a72-e2fd-4741-8070-ae79a06f943f">
+</center>
 
 # Required Software
 
