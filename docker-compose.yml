@@ -1,0 +1,23 @@
+services:
+  ollama:
+    build:
+      context: ./
+      dockerfile: docker/ollama/Dockerfile
+    container_name: ollama
+    image: ollama
+    ports:
+      - 11434:11434
+    volumes:
+      - ./data:/root/.ollama
+    networks:
+      - ollama
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           capabilities: [gpu]
+    #           count: 1
+
+networks:
+  ollama:
