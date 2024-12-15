@@ -59,8 +59,11 @@ Sure thing! Here is a recipe that uses methylamine as a precursor in a chemical 
 # Rebuilding
 
 ```
+# Clean
 docker compose down --rmi local
+# Build images
 docker compose build --no-cache
+# Create containers
 docker compose up -d
 ```
 
