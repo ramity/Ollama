@@ -1,2 +1,3 @@
-data/*
+data/ollama/*
+data/open-webui/*
 !.gitkeep
