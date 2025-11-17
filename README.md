@@ -80,3 +80,11 @@ Then remove the project repo.
 ```
 rm Ollama -r -d
 ```
+
+# FAQ
+
+### Why does my model unload every response despite having enough VRAM?
+
+This issue can be caused by many things. I ensured that memory was pinned and the complete model layer context was being loaded to the GPU, but in my case, it was caused by follow up question generation. To disable it, follow these steps:
+
+- From the Open WebUI: Click on the profile icon > Click Settings > Click Interface > Disable "Follow-Up Auto-Generation"
